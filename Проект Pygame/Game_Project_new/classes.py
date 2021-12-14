@@ -26,11 +26,11 @@ class Player:
             self.y += self.speed
 
     def draw(self, Window, my_font):
-        # pygame.draw.circle(window, 'Black', (self.x, self.y), 50)
-        # pygame.draw.circle(window, 'Yellow', (self.x, self.y), 45)
-        Window.blit(self.image, (self.x - 50, self.y - 50))
-        player_surface = my_font.render('player', False, 'White')
-        Window.blit(player_surface, (self.x - 44, self.y + 35))
+        pygame.draw.circle(Window, 'Black', (self.x, self.y), 50)
+        pygame.draw.circle(Window, 'Yellow', (self.x, self.y), 45)
+        # Window.blit(self.image, (self.x - 50, self.y - 50))
+        # player_surface = my_font.render('player', False, 'White')
+        # Window.blit(player_surface, (self.x - 44, self.y + 35))
         pygame.draw.rect(Window, 'Black', (self.x - 53, self.y - 69, 103, 13), 8)
         pygame.draw.rect(Window, 'White', (self.x - 50, self.y - 66, 100, 10))
         pygame.draw.rect(Window, 'Red', (self.x - 50, self.y - 66, int(20 * self.health), 10))

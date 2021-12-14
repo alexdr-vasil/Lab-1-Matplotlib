@@ -85,9 +85,9 @@ def death():
         pygame.mixer.music.load("Death.mp3")
         pygame.mixer.music.set_volume(0.05)
         pygame.mixer.music.play()
-    pygame.draw.rect(window, 'Blue', (325, 895, 350, 65))
+    pygame.draw.rect(window, 'Black', (325, 895, 350, 65))
     pygame.draw.rect(window, 'White', (330, 900, 340, 55))
-    death_surface = my_font.render('YOU DIED! SORRY!', False, 'Blue')
+    death_surface = my_font.render('YOU DIED! SORRY!', False, 'Black')
     window.blit(death_surface, (350, 900))
 
 
@@ -100,9 +100,9 @@ def win_game():
         pygame.mixer.music.set_volume(0.05)
         pygame.mixer.music.play()
 
-    pygame.draw.rect(window, 'Blue', (240, 895, 540, 65))
+    pygame.draw.rect(window, 'Black', (240, 895, 540, 65))
     pygame.draw.rect(window, 'White', (245, 900, 530, 55))
-    win_surface = my_font.render('YOU WON! CONGRATULATIONS!', False, 'Blue')
+    win_surface = my_font.render('YOU WON! CONGRATULATIONS!', False, 'Black')
     window.blit(win_surface, (250, 900))
 
 
